@@ -1,0 +1,40 @@
+{
+  "name": "raise-alarm",
+  "version": "0.0.1",
+  "description": "Raise a alarm to all client who are connected on the page.",
+  "main": "raise-alarm.js",
+  "bin": {
+    "rase-alarm": "raise-alarm.js"
+  },
+  "dependencies": {
+    "chalk": "0.5.1",
+    "commander": "^2.5.1",
+    "express": "^4.10.6",
+    "serve-static": "^1.7.1",
+    "socket.io": "^1.2.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.6.0",
+    "matchdep": "~0.3.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-copy": "~0.7.0",
+    "grunt-usemin": "^2.2.0",
+    "grunt-contrib-htmlmin": "^0.3.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-uncss": "^0.3.6",
+    "grunt-autoprefixer": "^1.0.1",
+    "time-grunt": "^1.0.0"
+  },
+  "author": {
+    "name": "Cédric",
+    "email": "cedced19@gmail.com",
+    "url": "https://github.com/cedced19"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://cedced19.github.io/license/"
+    }
+  ]
+}

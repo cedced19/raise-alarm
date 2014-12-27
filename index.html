@@ -1,0 +1,72 @@
+<html>
+
+    <head>
+        <title>Raise alarm</title>
+        <!-- build:css vendor/css/styles.css -->
+        <link href="vendor/css/bootstrap.min.css" rel="stylesheet">
+        <link href="vendor/css/ripples.min.css" rel="stylesheet">
+        <link href="vendor/css/material-wfont.min.css" rel="stylesheet">
+        <link href="vendor/css/app.css" rel="stylesheet">
+        <!-- endbuild -->
+        <link href="//cedced19.github.io/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    </head>
+
+    <body>
+        
+        <div class="container">
+
+            <h1>Raise alarm</h1>
+            <p class="lead">Raise a alarm to all client who are connected on the page.</p>
+            <a class="btn btn-danger" id="danger"><i class="stat mdi-social-notifications"></i></a>   
+            <a data-target="#nothing" data-toggle="modal" class="btn btn-success" id="safe"><i class="stat mdi-social-notifications-none"></i></a>
+            <br>
+            <a class="btn btn-info" id="send" data-target="#done" data-toggle="modal">Raise alarm</a>
+        </div>
+        
+        <div class="modal" id="nothing">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Information</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>There are no alarm.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal" id="done">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Information</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>It's do!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <audio src="vendor/sounds/Raise alarm.mp3" preload loop ></audio>
+       
+        <script src="socket.io/socket.io.js"></script>
+        
+        <!-- build:js vendor/js/scripts.js -->
+        <script src="vendor/js/jquery.min.js"></script>
+        <script src="vendor/js/bootstrap.min.js"></script>
+        <script src="vendor/js/ripples.min.js"></script>
+        <script src="vendor/js/material.min.js"></script>
+        <script src="vendor/js/app.js"></script>
+        <!-- endbuild -->
+
+    </body>
+
+</html>
