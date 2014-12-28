@@ -3,6 +3,7 @@
 var app = require('express')(),
     serveStatic = require('serve-static'),
     program = require('commander'),
+    opn = require('opn'),
     chalk = require('chalk');
 
 program
@@ -18,11 +19,12 @@ var server = require('http').createServer(app);
 
 if (!isNaN(parseFloat(program.port)) && isFinite(program.port)){
     var port = program.port;
-    }else{
+}else{
     var port = 7774;
-    }
-    server.listen(port, function() {
+}
+server.listen(port, function() {
     console.log('Server running at\n => '+ chalk.green('http://localhost:' + port) + '\nCTRL + C to shutdown');
+    opn('http://localhost:' + port);
 });
 
 var io = require('socket.io').listen(server);

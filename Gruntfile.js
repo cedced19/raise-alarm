@@ -10,7 +10,8 @@ module.exports = function(grunt) {
             'index.html',
             'vendor/**/*.*',
             'package.json',
-            'raise-alarm.js',
+            'raise-alarm-server.js',
+            'raise-alarm-cli.js',
             'README.md'
           ],
           dest: 'dist/'
