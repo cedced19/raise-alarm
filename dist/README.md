@@ -5,7 +5,6 @@
 [![NPM version](https://badge.fury.io/js/raise-alarm.svg)](http://badge.fury.io/js/raise-alarm)
 
 Raise a alarm to all client who are connected on the page.  
-__Work in progress but it's close to be finished.__
 
 ![](https://raw.githubusercontent.com/cedced19/raise-alarm/master/demo.png)
 

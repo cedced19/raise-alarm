@@ -25,5 +25,15 @@ $(document).ready(function() {
        socket.emit('send');
     });
     
+    $('#modal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget);
+      var recipient = button.data('info');
+      var modal = $(this).find('.modal-body');
+      modal.text('');
+      var cotent = $('<p>');
+      content.text(recipient);
+      content.appendTo(modal);
+    });
+
     $.material.init();
 });
