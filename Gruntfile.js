@@ -12,6 +12,7 @@ module.exports = function(grunt) {
             'package.json',
             'raise-alarm-server.js',
             'raise-alarm-cli.js',
+            'favicon.ico',
             'README.md'
           ],
           dest: 'dist/'

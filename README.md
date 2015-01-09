@@ -27,7 +27,7 @@ $ raise-alarm
 ##Server
 
 ```bash
-$ git clone https://github.com/cedced19/raise-alarm
+$ git clone --depth=1 --branch=master https://github.com/cedced19/raise-alarm
 $ cd ./raise-alarm/dist/
 $ npm install --production
 ```
