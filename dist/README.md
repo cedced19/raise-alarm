@@ -1,4 +1,4 @@
-#Raise-alarm
+# Raise-alarm
 
 [![Build Status](https://travis-ci.org/cedced19/raise-alarm.svg)](https://travis-ci.org/cedced19/raise-alarm)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
@@ -8,13 +8,13 @@ Raise a alarm to all client who are connected on the page.
 
 ![](https://raw.githubusercontent.com/cedced19/raise-alarm/master/demo.png)
 
-##CLI
+## CLI
 ```bash
 $ npm install raise-alarm -g
 $ raise-alarm
 ```
 
-####Options
+#### Options
 
 ```
 -h, --help                  output usage information
@@ -24,7 +24,7 @@ $ raise-alarm
 -p, --port [number]          specified the port
 ```
 
-##Server
+## Server
 
 ```bash
 $ git clone --depth=1 --branch=master https://github.com/cedced19/raise-alarm

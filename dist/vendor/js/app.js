@@ -30,7 +30,7 @@ $(document).ready(function() {
       var recipient = button.data('info');
       var modal = $(this).find('.modal-body');
       modal.text('');
-      var cotent = $('<p>');
+      var content = $('<p>');
       content.text(recipient);
       content.appendTo(modal);
     });

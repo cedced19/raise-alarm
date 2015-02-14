@@ -1,2 +1,13 @@
 node_modules/
 .tmp/
+dist/vendor/js/app.js
+dist/vendor/js/bootstrap.min.js
+dist/vendor/js/jquery.min.js
+dist/vendor/js/material.min.js
+dist/vendor/js/ripples.min.js
+dist/vendor/css/ripples.min.css
+dist/vendor/css/material.min.css
+dist/vendor/css/material-wfont.min.css
+dist/vendor/css/bootstrap.min.css
+dist/vendor/css/app.css
+dist/vendor/fonts/LICENCE.txt
