@@ -1,13 +1,13 @@
 {
   "name": "raise-alarm",
-  "version": "0.0.4",
+  "version": "0.0.4-1",
   "description": "Raise a alarm to all client who are connected on the page.",
   "main": "raise-alarm.js",
   "bin": {
     "raise-alarm": "raise-alarm.js"
   },
   "dependencies": {
-    "check-update": "0.0.5",
+    "check-update": "0.0.7",
     "colors": "^1.0.3",
     "hapi": "^8.1.0",
     "commander": "^2.5.1",

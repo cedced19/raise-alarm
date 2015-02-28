@@ -1,6 +1,6 @@
 {
   "name": "raise-alarm",
-  "version": "0.0.4",
+  "version": "0.0.4-1",
   "description": "Raise a alarm to all client who are connected on the page.",
   "main": "raise-alarm.js",
   "bin": {
