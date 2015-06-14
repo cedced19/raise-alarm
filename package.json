@@ -9,12 +9,13 @@
   "dependencies": {
     "check-update": "0.0.8",
     "colors": "^1.0.3",
-    "hapi": "^8.1.0",
     "commander": "^2.5.1",
+    "hapi": "^8.1.0",
     "socket.io": "^1.2.1"
   },
   "devDependencies": {
     "gulp": "^3.8.10",
+    "gulp-concat": "^2.5.2",
     "gulp-htmlmin": "^1.1.1",
     "gulp-if": "^1.2.5",
     "gulp-minify-css": "^1.1.1",
