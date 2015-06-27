@@ -12,17 +12,17 @@
     </head>
 
     <body>
-        
+
         <div class="container">
 
             <h1>Raise alarm</h1>
             <p class="lead">Raise a alarm to all client who are connected on the page.</p>
-            <a class="btn btn-danger" id="danger"><i class="stat mdi-social-notifications"></i></a>   
+            <a class="btn btn-danger" id="danger"><i class="stat mdi-social-notifications"></i></a>
             <a data-target="#modal" data-toggle="modal" class="btn btn-success" id="safe" data-info="There are no alarm."><i class="stat mdi-social-notifications-none"></i></a>
             <br>
             <a class="btn btn-info" id="send" data-target="#modal" data-toggle="modal" data-info="It's do!">Raise alarm</a>
         </div>
-        
+
         <div class="modal" id="modal">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -36,12 +36,12 @@
                 </div>
             </div>
         </div>
-        
-        
+
+
         <audio src="vendor/sounds/alarm.mp3" preload loop></audio>
-       
+
         <script src="socket.io/socket.io.js"></script>
-        
+
         <!-- build:js vendor/js/scripts.js -->
         <script src="vendor/js/jquery.min.js"></script>
         <script src="vendor/js/bootstrap.min.js"></script>

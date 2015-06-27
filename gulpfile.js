@@ -19,11 +19,6 @@ gulp.task('copy-fonts', function() {
         .pipe(gulp.dest('dist/vendor/fonts'));
 });
 
-gulp.task('copy-server-lib', function() {
-    gulp.src('lib/**.js')
-        .pipe(gulp.dest('dist/lib'));
-});
-
 gulp.task('copy-sounds', function() {
     gulp.src('vendor/sounds/**.*')
         .pipe(gulp.dest('dist/vendor/sounds'));
@@ -41,12 +36,18 @@ gulp.task('html', function () {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('css', ['html'], function () {
+gulp.task('uncss', function () {
     return gulp.src('vendor/css/*.css')
         .pipe(concat('styles.css'))
         .pipe(uncss({
             html: ['index.html']
         }))
+        .pipe(gulp.dest('dist/vendor/css'));
+});
+
+gulp.task('css', ['uncss'], function () {
+    return gulp.src(['dist/vendor/css/styles.css', 'vendor/css/ripples.min.css'])
+        .pipe(concat('styles.css'))
         .pipe(autoprefixer({
             browsers: ['last 2 versions', 'ie 8', 'ie 9']
         }))
@@ -54,4 +55,4 @@ gulp.task('css', ['html'], function () {
         .pipe(gulp.dest('dist/vendor/css'));
 });
 
-gulp.task('default', ['css', 'copy', 'copy-sounds', 'copy-fonts', 'copy-server-lib']);
+gulp.task('default', ['css', 'html', 'copy', 'copy-sounds', 'copy-fonts']);
